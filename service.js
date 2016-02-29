@@ -5,7 +5,7 @@ var express        = require("express"),
     mongoose       = require('mongoose'),
     requestify     = require("requestify");
 
-  mongoose.connect('mongodb://ec2-54-164-141-121.compute-1.amazonaws.com:27017/kml_db', function(err, res) {
+  mongoose.connect('mongodb://10.1.1.110:27017/kml_db', function(err, res) {
     if(err) throw err;
     console.log('Connected to Database');
   });
